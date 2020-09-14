@@ -1,15 +1,10 @@
 <h1 align="center">Welcome to CKG 👋</h1>
 <p>
   <img src="https://img.shields.io/badge/version-v.0.9-blue.svg?cacheSeconds=2592000" />
-  <a href="https://twitter.com/_Epistol_">
-    <img alt="Twitter: _Epistol_" src="https://img.shields.io/twitter/follow/_Epistol_.svg?style=social" target="_blank" />
-  </a>
+  
 </p>
 
-[![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Epistol/cdg)
-
-
-> CKG is a website of recipes from books, games, movies, anime, etc ...
+ CKG is a website of recipes from books, games, movies, anime, etc ...
 
 <p align="center"></p>
 
