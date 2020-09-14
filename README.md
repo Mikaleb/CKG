@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to CookGeek 👋</h1>
+<h1 align="center">Welcome to CKG 👋</h1>
 <p>
   <img src="https://img.shields.io/badge/version-v.0.9-blue.svg?cacheSeconds=2592000" />
   <a href="https://twitter.com/_Epistol_">
@@ -9,9 +9,9 @@
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Epistol/cdg)
 
 
-> CDG is a website of recipes from books, games, movies, anime, etc ...
+> CKG is a website of recipes from books, games, movies, anime, etc ...
 
-<p align="center"><img src="https://cuisinedegeek.com/img/logoo_rond.png" height="120" ></p>
+<p align="center"></p>
 
 
 
@@ -23,10 +23,7 @@ npm install
 
 ## Author
 
-👤 **Epistol**
-
-* Twitter: [@_Epistol_](https://twitter.com/_Epistol_)
-* Github: [@Epistol](https://github.com/Epistol)
+👤 **Mikaleb**
 
 ## Products used
 
