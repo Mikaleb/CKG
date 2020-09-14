@@ -1,0 +1,240 @@
+#app {
+  @apply min-h-screen w-full;
+}
+
+.navbar {
+  @apply w-full z-10 top-0;
+  @include transition_all();
+  //position: fixed;
+}
+
+.second-menu {
+  background: $body-bg;
+  @apply shadow;
+  //border-bottom: 0.1rem $brand-primary solid;
+  //-webkit-box-shadow: 0px 4px 10px rgba($darkGrey, 0.1);
+  //box-shadow: 0px 4px 10px rgba($darkGrey, 0.1);
+  @screen sm {
+    display: none;
+  }
+}
+
+span.font-brand {
+  @apply text-purple font-brand;
+
+}
+
+a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+  @apply text-pink;
+}
+
+.is-hoverable:hover .navbar-dropdown a.navbar-item:hover {
+  @apply text-purple;
+}
+
+span.navbar-secondaire-item {
+  @apply hidden pl-4 text-purple;
+
+  @screen sm {
+    @apply flex;
+  }
+}
+
+.nav-item-centered {
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar-start {
+  @apply justify-start mr-auto flex items-stretch;
+}
+
+.navbar-end {
+  @apply justify-end ml-auto flex items-stretch;
+}
+
+.logo {
+  font-family: $typotitle;
+  @apply text-3xl text-purple;
+  padding: 0.5rem 1rem;
+  @include transition_all();
+
+  &:hover {
+    @include transition_all();
+  }
+}
+
+.side-bg {
+  @apply pt-4 pr-2 pb-2 pl-2 my-4;
+  @apply border-t-2 border-fog;
+
+  &.pub {
+    background: #ebeaf5;
+    -webkit-border-radius: 20px 40px 20px 40px;
+    border-radius: 20px 40px 20px 40px;
+    text-align: center;
+  }
+}
+
+
+.is-hoverable:hover .navbar-dropdown .navbar-item {
+  color: white;
+}
+
+
+.is-hoverable:hover .navbar-dropdown {
+  -webkit-box-shadow: 0 5px 10px 0px hsla(245, 35%, 80%, 1);
+  box-shadow: 0 5px 10px 0px hsla(245, 35%, 80%, 1);
+}
+
+.is-hoverable:hover .navbar-link {
+  background: $brand-primary !important;
+  color: white;
+}
+
+.navbar-dropdown {
+  padding-top: 0px;
+  background-color: $brand-primary !important;
+  color: white;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top: 0px solid $brand-primary;
+  -webkit-box-shadow: 0 2px 2px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 2px 2px rgba(10, 10, 10, 0.1);
+  @include transition_all();
+
+  &#types {
+    @screen sm {
+      display: none;
+    }
+  }
+}
+
+
+.desktop-only {
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+
+
+a.navbar-item, a.navbar-link {
+
+  @apply text-purple text-lg;
+
+
+  @screen sm {
+    color: white;
+  }
+  @screen md {
+    color: grey;
+  }
+
+  &.bg-white {
+    @apply text-purple;
+    @include small-laptop {
+      color: white;
+    }
+  }
+
+  @include transition_all();
+}
+
+
+.search-header {
+  display: table-cell;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-search-button {
+  position: absolute;
+  right: 2rem;
+  top: 35%;
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+
+  &:hover {
+    @apply text-purple;
+  }
+}
+
+a.navbar-item, a.navbar-link {
+  @apply text-purple;
+}
+
+#logo-navbar {
+  @apply flex items-center flex-shrink-0 text-white mr-6 ;
+}
+
+#navMenu {
+  @apply items-start justify-between flex-shrink-0 visible flex-auto items-center flex-1 flex;
+}
+
+#iconsMenu {
+  @apply items-center justify-between flex-wrap flex-shrink-0 w-full bg-fog;
+}
+
+#navIcons {
+  @apply items-center justify-between flex flex-wrap flex-shrink-0 visible w-full  ;
+}
+
+#second-navbar {
+  @apply w-full flex items-center justify-between flex-wrap h-20;
+}
+
+@screen sm {
+  #second-navbar {
+    @apply hidden;
+  }
+}
+
+@screen md {
+  #second-navbar {
+    @apply hidden;
+  }
+}
+
+@screen lg {
+  #second-navbar {
+    @apply hidden;
+  }
+}
+
+.mobile-bottom-menu {
+  display: flex;
+}
+
+.menu-left-avatar {
+  border: 3px solid white;
+  -webkit-box-shadow: 0 4px 10px 0 $brand-primary;
+  box-shadow: 0 4px 10px 0 $brand-primary;
+}
+
+.navbar-item {
+  @apply flex py-2 px-3;
+}
+
+.menu-user {
+  padding-top: 33%;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+
+.menu-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure.menu-avatar {
+  position: absolute;
+  top: 0px;
+}
+

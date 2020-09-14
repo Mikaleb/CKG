@@ -1,0 +1,16 @@
+.notification.is-success {
+  background-color: #23d160;
+  color: #fff;
+}
+
+#bottom_right_content {
+  display:flex;justify-content:center;align-items:center;
+  position: relative;
+}
+
+#medaillon_index {
+  @apply z-10 absolute top-0 right-0 opacity-50 p-1;
+  &:hover {
+    @apply opacity-100;
+  }
+}

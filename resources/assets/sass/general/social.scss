@@ -1,0 +1,41 @@
+
+.sharing {
+  position: relative;
+  display: inline-block;
+  @include transition_all();
+}
+
+.sharing:hover > .sharing-block {
+  display: block;
+  position: absolute;
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+  padding-top: 0.5rem;
+  @include transition_all();
+}
+
+
+a.like {
+  @apply rounded-full text-white h-8 w-8;
+  background-color: #FCBEE1;
+  @include transition_all();
+
+  &:hover {
+    @apply text-white;
+    @apply shadow;
+    @include transition_all();
+  }
+}
+
+a.print {
+  @apply rounded-full bg-lightpurple border-0 mx-4 text-white;
+  @include transition_all();
+
+  &:hover {
+    color: white;
+    box-shadow: 0 0 15px 0px #7f5fbf;
+    -webkit-box-shadow: 0 0 15px 0px #7f5fbf;
+    @include transition_all();
+  }
+}

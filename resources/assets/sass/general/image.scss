@@ -1,0 +1,25 @@
+.is-recipe-horizontal > img {
+  -webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,0.16);
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.16);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.rounded > img {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.radius-index {
+  -webkit-border-radius: 0 0 15px 15px;
+  border-radius: 0 0 15px 15px;
+  & > .img {
+    -webkit-border-radius: 0 0 15px 15px;
+    border-radius: 0 0 15px 15px;
+  }
+}
+
+img.tovalidate {
+  opacity: 0.5;
+  border: 2px dashed #723690;
+}

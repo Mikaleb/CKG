@@ -1,0 +1,20 @@
+.medail {
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  min-width: 3rem;
+  min-height: 3rem;
+}
+
+
+.medaillon {
+  position: absolute;
+  margin: auto;
+  top: 56%;
+  left: 40%;
+}
+

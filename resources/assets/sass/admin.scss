@@ -1,0 +1,28 @@
+// Fonts
+//@import url("https://fonts.googleapis.com/css?family=Karla:300,400,600");
+// Variables
+@import "variables";
+
+$primary: $brand-primary;
+$danger: $brand-danger;
+$success: $brand-success;
+$warning: $brand-warning;
+
+@import "general/indexing";
+@import "darktheme";
+@import "admin/admin";
+@import "components/autocomplete";
+@import '~instantsearch.css/themes/algolia-min';
+
+// ----------------------------------------------------------------------
+// Margin auto
+// ----------------------------------------------------------------------
+
+@mixin margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tag > a {
+  color: #524d55;
+}

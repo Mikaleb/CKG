@@ -1,0 +1,127 @@
+body.nightmode {
+
+  $body-bg: #272838;
+  background: $body-bg;
+
+  & .is-brand {
+    color: rgb(155, 130, 205);
+  }
+
+  & nav.navbar {
+    background: #272838;
+  }
+
+  & .category-split {
+    border:0px;
+  }
+
+  & .second-menu {
+    background: #273043;
+    box-shadow: none;
+  }
+
+  & span.navbar-secondaire-item, a.navbar-item, a.navbar-link {
+    color: #E0E2DB;
+  }
+
+  & a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+    background: $brand-primary;
+
+  }
+
+  &::placeholder, ::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #E0E2DB;
+    opacity: 0.5;
+  }
+
+  & .blockcontent, .searchresult, .list-h-show, .recipe-index-description {
+    background: #595F72;
+  }
+
+  & h1, h2, h3, h4, h5, h6, .title, .label {
+    color: #E0E2DB;
+  }
+
+  & .input, .textarea, input.input_modal, textarea.input_modal {
+    background: #6c748c;
+    color: #E0E2DB;
+    border: 0;
+  }
+
+  & .card-cdg, .background-round, .right_admin, header.background-round ,.column.recipe-right-add, .page, .autocomplete-results, .is-result, .card, .univers-element, .page--no-pading, .side-left, .list-h-show, .timeline-Widget, .side-bg.pub, .author {
+    background: #273043;
+    color: #E0E2DB;
+  }
+
+  & .list-h-show {
+    border-bottom: 1px solid #272838;
+  }
+
+  & .fiche-info, .left-side, .side-left {
+    border-right: 1px solid #272838 !important
+  }
+
+  & .card.cdg {
+    border: 0.5rem solid #122932 !important;
+  }
+
+  & .is-checkradio[type="radio"] + label::before, .is-checkradio[type="checkbox"] + label::before, .step_number, .author {
+    border: 2px solid rgb(57, 129, 158) !important;
+  }
+
+  .side-bg, .fb-commentaire {
+    border-top: 2px solid rgb(57, 129, 158) !important;
+  }
+
+
+  & .button {
+    background-color: rgb(23, 24, 28);
+    border-top-color: rgb(58, 58, 58);
+    border-right-color: rgb(58, 58, 58);
+    border-bottom-color: rgb(58, 58, 58);
+    border-left-color: rgb(58, 58, 58);
+    color: rgb(212, 209, 204);
+
+    & .is-primary {
+      background: $pink;
+      color: white;
+    }
+  }
+
+  & .tag:not(body) {
+    background-color: rgb(26, 27, 31);
+    color: rgb(204, 201, 195);
+  }
+
+  & .is-lateral {
+    border: 0;
+  }
+
+  & .recipe-other-picture {
+    border: 1px solid $body-bg;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  & .recipe-header {
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      box-shadow: 0 0 3px rgba(#000, .1);
+      background-color: rgba(108, 84, 143, 0.7);
+    }
+  }
+
+  & .home-text {
+    color: white;
+  }
+}
+
+html.nightmode {
+  background: #272838;
+}

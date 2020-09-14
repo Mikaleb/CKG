@@ -1,0 +1,133 @@
+
+.page {
+  background: $antiwhite;
+  padding: 2.5rem;
+}
+
+.page--no-pading {
+  background: $antiwhite;
+}
+
+table.times th {
+  padding-right: 0.5rem;
+}
+
+.columns .close-hover {
+  display: none;
+}
+
+.columns.draggable:hover .close-hover {
+  display: flex;
+}
+
+.column.recipe-right-add {
+  padding-top: 3.5rem;
+  z-index: 1;
+  padding-left: 2rem;
+  @apply bg-white;
+  -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+.columns.timing {
+  margin-top: 1rem;
+}
+
+.column.steps {
+  z-index: 1;
+  margin-top: 2rem;
+  @apply bg-white;
+  -webkit-box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.3)
+}
+
+.addsteprecipe {
+  width: 33%;
+  margin-left: 33%;
+}
+
+// REsult recipe
+
+.top {
+  overflow: auto hidden;
+  max-height: 25%;
+
+}
+
+.middle {
+  margin-top: 0.5rem;
+  min-height: 6rem;
+  max-height: 60%;
+  overflow: hidden;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.bottom {
+  max-height: 25%;
+  overflow: hidden;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+
+.hovered {
+  visibility: hidden;
+  height: 0px;
+}
+
+.to-hover:hover .hovered {
+  visibility: visible;
+  position: absolute;
+  z-index: 5;
+}
+
+.bottom-right-aligned {
+  display:flex;justify-content:flex-end;align-items:flex-end;
+}
+
+section.entete {
+  background: hsla(245, 35%, 85%, 1);
+  padding: 1%;
+}
+
+.recipe-header {
+  position: absolute;
+  bottom: 28.4%;
+  z-index:1;
+  width: 100%;
+  &:before {
+    background-blend-mode: exclusion;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    filter: url(#blur);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='8');
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    box-shadow: 0 0 3px rgba(#000, .1);
+    background-color: rgba(#fff, .8);
+  }
+}
+
+.author {
+  border: 2px solid #cbc2f6;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 1);
+}
+
+.fit-cover {
+  object-fit: cover;
+}
+
+.column {
+  word-break: break-all;
+}

@@ -1,0 +1,37 @@
+.card-cdg {
+  @apply relative mt-4 shadow bg-white rounded;
+}
+
+p.card-header-title {
+  @apply flex justify-center items-center;
+}
+
+.columns.mini-infos {
+  @apply text-sm;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.1);
+}
+
+section.bgwhite {
+  @apply bg-white;
+}
+
+.recipe-index-description {
+  @apply bg-white;
+  @apply w-11/12;
+  border: 0px solid #ccc;
+  padding: 23px 22px 15px 22px;
+  margin: 0 auto!important;
+  position: relative;
+  top: -2rem;
+  min-height: 10rem;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.img-radius {
+  @apply rounded-sm;
+}
+

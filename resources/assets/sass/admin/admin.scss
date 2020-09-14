@@ -1,0 +1,106 @@
+#bodySite {
+  -webkit-box-shadow: 0 2px 2px 0 #E8E8E8;
+  box-shadow: 0 0px 10px 0 #eaeaea;
+}
+
+aside.menu {
+  padding-top: 10%;
+}
+
+.left_menu {
+  background: $antiwhite;
+  padding-right: 0px;
+  padding-left: 5%;
+}
+
+.left_admin {
+  background: #363457;
+  padding-right: 0px;
+  & .menu-list {
+    & a {
+      color: $lavender;
+      @apply text-sm;
+      &:hover {
+        color: #363457;
+      }
+    }
+  }
+}
+ul.menu-list {
+  opacity: 1;
+  //position: absolute;
+  //left: 14%;
+  //top: 64px;
+  //pointer-events: none;
+}
+p.menu-label {
+  @include transition_all();
+  @apply text-purple;
+  align-items: center;
+  & a {
+    @apply text-sm;
+    color: white;
+    &:hover {
+      color: antiquewhite;
+    }
+  }
+ /* &:hover {
+    @include transition_all();
+    cursor:pointer;
+    pointer-events: all;
+    & + ul {
+      @include transition_all();
+      opacity:1;
+      background:white;
+    }
+  }*/
+
+  // If it contains a opened div
+  &.is-open {
+    background: $antiwhite;
+    & a {
+      color: #363457;
+    }
+    & + ul.menu-list {
+      display: block;
+      background : rgba(0,0,0,0.2);
+    }
+  }
+}
+
+.content ul {
+  list-style: none;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+.entity {
+  border-bottom: 3px solid $body-bg;
+  padding: 1rem;
+}
+
+.box-color {
+  background: transparent;
+  border-radius: 2px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1), inset 0 0 0 1px rgba(0, 0, 0, .1);
+  display: inline-block;
+  float: left;
+  height: 24px;
+  margin-right: 8px;
+  width: 24px;
+}
+
+.right_admin {
+  background: #fdfdfd;
+}
+
+td.valid {
+  background: $green;
+  color: white;
+}
+
+td.unvalid {
+  background: $red;
+  color: white;
+}
+

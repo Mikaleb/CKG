@@ -1,0 +1,120 @@
+
+.greyed {
+  -webkit-filter: grayscale(70%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(70%);
+
+  &:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+  }
+}
+
+.draggable {
+  cursor: move;
+}
+
+
+.content figure:not(:last-child) {
+  margin-bottom: 0em;
+}
+
+
+.horizontalover {
+
+  overflow-x: auto;
+  padding: 1rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.is-marginmore {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.is-centered {
+  //text-align: center;
+}
+
+.is-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span.span-flex-center {
+  display:flex;justify-content:center;align-items:center;
+}
+.is-flex-top {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grecaptcha-badge {
+  display: none;
+}
+
+.step_number {
+  border: 2px solid #E3E1F7;
+  padding: 0.2rem;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.side-left {
+  background: #fdfdfd;
+  border-right: 1px solid #EBEAF5;
+}
+
+@supports (position:sticky) {
+  .is-fixed-top {
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+  }
+}
+
+.sticky {
+  //box-shadow: 0 0 5px 9px #6C548F;
+  //-webkit-box-shadow: 0 0 5px 9px #6C548F;
+  @include transition_all();
+}
+
+html.has-navbar-fixed-top, body.has-navbar-fixed-top {
+  padding-top: 0rem !important;
+}
+
+.radio-vertical {
+  padding-bottom: 0.5rem;
+}
+
+section.conduite {
+  padding: 0.5rem 1.5em;
+  border-top: 1px solid #dbdbdb;
+  background: #ebeaf5;
+}
+
+.break-more {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.has-text-centered {
+  display:flex;justify-content:center;align-items:center;
+}
+
+pre {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}

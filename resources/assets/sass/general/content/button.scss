@@ -1,0 +1,49 @@
+.button-picture, a.button-picture {
+  background: transparent;
+  margin-top:2vh;
+  box-shadow : 0px 8px 15px rgba(0, 0, 0, 0.1);
+  color: #bf4fc8;
+  border-width: 2px;
+  /* -webkit-box-shadow: 0px 6px 11px rgba(0, 0, 0, 0.2); */
+  /* box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0px 2px 2px 0 rgba(0,0,0,.14), 0 7px 10px 0 rgba(0,0,0,.12); */
+  border-color: #bf4fc8;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    color:white;
+    border-width: 0px;
+  }
+}
+
+.button .icon:first-child:last-child {
+   margin-left: 0px;
+   margin-right:0px;
+}
+
+
+.pointer-hover {
+  &:hover {
+    cursor:pointer;
+  }
+}
+
+.uploadIcon {
+  color: white;
+  opacity: 0.5;
+  position: absolute;
+  z-index:0;
+}
+
+.button {
+  @apply rounded p-1 px-3 items-center;
+
+  &.is-round {
+    @apply w-8 h-8 p-1 px-1;
+    display:flex;justify-content:center;align-items:center;
+  }
+  &.is-primary {
+    @apply bg-purple text-white;
+    border-color: transparent;
+  }
+}
+

@@ -1,0 +1,211 @@
+html, body {
+  box-sizing: border-box;
+  @apply bg-white h-full;
+}
+
+body, button, input, select, textarea {
+  font-family: $typocontent;
+}
+
+.is-fullwidth, .is-fullwidth select {
+  width: 100%;
+}
+
+.blockcontent {
+  @apply bg-white shadow-md ;
+
+  @screen sm {
+
+  }
+
+  @screen md {
+    @apply p-8 m-8 mt-0;
+  }
+}
+
+
+
+.searchresult {
+  @apply bg-white shadow;
+}
+
+.not-active {
+  @apply hidden h-0;
+}
+
+.active {
+  @apply block visible;
+  height: initial;
+}
+
+.likedanimation {
+  -webkit-animation: pulse;
+  animation: pulse;
+  animation-duration: .55s;
+}
+
+a.tag.like:hover {
+  @apply no-underline;
+}
+
+
+// NAVBAR
+.navbar-item.has-dropdown.is-hoverable {
+  @apply z-30;
+  @include transition_all();
+}
+
+.content li + li {
+  @apply mt-0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-main pt-3 pb-1;
+}
+
+.section-nomargin-side {
+  @apply px-10 py-6;
+}
+
+.hero-body {
+  @apply px-8 py-6;
+}
+
+.is-accent {
+  @apply text-secondary;
+}
+
+.breadcrumb:not(:last-child) {
+  @apply flex mb-2;
+  & ul {
+    @apply flex items-start flex-wrap justify-start;
+  }
+
+  & li {
+    @apply items-center flex;
+  }
+
+  & a {
+    @apply text-lightpurple items-center flex justify-center py-0 px-2 ;
+  }
+
+  & li + li:before {
+    @apply text-black;
+    content: "/";
+  }
+
+  & li.is-active a {
+    @apply text-black cursor-default pointer-events-none;
+  }
+
+}
+
+.is-brand {
+  @apply text-purple;
+}
+
+.container .navbar-brand {
+  @apply ml-0;
+}
+
+
+[v-cloak] > * {
+  display: none;
+}
+
+.button.is-round.is-small {
+  @apply rounded-full w-8 h-8;
+}
+
+
+.advanced {
+  @apply p-8;
+}
+
+.univers-element {
+  @apply bg-white;
+  margin-top: 0% !important;
+}
+
+.univers-element > ul, .univers-element > ul > li {
+  @apply list-none;
+}
+
+.categ-univers-recette {
+  @apply my-8;
+}
+
+.univers-media-titre {
+  border-bottom: 1px solid #ebeaf5;
+}
+
+.navbar-item.user_profile img {
+  max-height: initial !important;
+}
+
+.change-picture {
+  @apply text-2xl  text-purple rounded-full max-h-5 min-h-5 items-center flex z-20 absolute hidden opacity-0 bg-fog justify-center;
+  min-width: 64px;
+  top: 25%;
+  left: 25%;
+  @include transition_all();
+
+}
+
+figure.image:hover {
+  cursor: pointer;
+
+  & > .change-picture {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  & img {
+    opacity: 0.8;
+    @include transition_all();
+  }
+}
+
+figure.image img {
+  @include transition_all();
+}
+
+
+nav.breadcrumb {
+  @apply p-4 text-main;
+}
+
+.breadcrumb a {
+  @apply text-main;
+}
+
+
+.right-side-recipe {
+  @apply min-h-full;
+
+  & #ingredients {
+    border-bottom: 1px solid #ebeaf5;
+    @apply border-b border-fog;
+  }
+
+  & #author {
+    @apply relative flex items-center;
+
+    & .author {
+      border: 0px solid;
+    }
+  }
+}
+
+h2#recipe-user {
+  @apply pl-3;
+}
+
+.affix {
+  @apply fixed;
+  width: inherit;
+}
+
+.full-height {
+  @apply min-h-screen;
+}

@@ -1,0 +1,180 @@
+a {
+  @apply cursor-pointer no-underline text-purpleclear;
+}
+
+.label {
+  color: #363636;
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: $violet;
+
+/**
+ * Set the Conviction font face
+ * @nuclide
+ * @section Fonts
+ *  The font weight to be used.
+ */
+
+// Hard rules
+//
+// Style guide: hard-rule
+
+$typotitle: "Conviction", Tahoma, Geneva, sans-serif;
+
+/**
+ * Set the Avenir font face
+ * @nuclide
+ * @section Fonts
+ *  The font weight to be used.
+ */
+$typocontent: "AvenirMedium", Arial, Helvetica, sans-serif;
+
+
+@font-face {
+  font-family: 'AvenirBlack';
+  src: url('../fonts/avenir-black-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirMedium';
+  src: url('../fonts/avenir-medium-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvenirBook';
+  src: url('../fonts/avenir-book-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+}
+
+@font-face {
+  font-family: 'AvenirHeavy';
+  src: url('../fonts/avenir-heavy-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+}
+
+@font-face {
+  font-family: 'AvenirRoman';
+  src: url('../fonts/avenir-roman-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+}
+
+@font-face {
+  font-family: 'Conviction';
+  src: url("../fonts/Conviction.ttf") format("truetype");
+  font-display: swap;
+
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url("../fonts/futura/futur.ttf") format("truetype");
+  font-display: swap;
+
+}
+
+//404 page
+@font-face {
+  font-family: "EurostileBQ";
+  src: url("../fonts/EurostileBQ-BoldExtended.otf") format("opentype");
+  font-display: swap;
+
+}
+
+h1, h1.title {
+  @apply text-4xl font-semibold;
+}
+
+h2, h2.title {
+  @apply text-3xl font-semibold;
+}
+
+h3, h3.title {
+  @apply text-2xl font-semibold;
+}
+
+h4, h4.title {
+  @apply text-xl font-semibold;
+}
+
+h5, h5.title {
+  @apply text-lg font-semibold;
+}
+
+h6, h6.title {
+  @apply text-lg font-semibold;
+}
+
+.content h1, h1.title {
+  @apply text-pink;
+}
+
+h2.title {
+  @apply text-pink;
+}
+
+.category-split {
+  border-bottom: 1px solid #ebeaf5;
+  padding-bottom: 1rem !important;
+  padding-top: 0.5rem;
+}
+
+.home-text {
+  color: #7f5fbf;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: 'AvenirMedium', sans-serif;
+
+}
+
+h1.title-website {
+  font-family: "Conviction", Arial, serif;
+  @apply text-purple;
+  font-weight: normal;
+  @apply text-4xl;
+}
+
+h2.title-mini {
+  color: $gris_granite;
+  @apply text-xl;
+}
+
+.content-title {
+  font-family: 'AvenirMedium', serif;
+  font-weight: 500;
+  @apply text-lg;
+  @apply text-purple;
+  padding: 0.5rem;
+}
+
+span.ingredient-title {
+  font-weight: 900;
+  @apply text-base;
+  text-align: left;
+  color: #fe688e;
+  text-transform: uppercase;
+}

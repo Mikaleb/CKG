@@ -1,0 +1,160 @@
+// Navbar
+$navbar-default-bg: $white;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+$taille_minimale_photo: 640px;
+
+$screen-mobile: 425px;
+$screen-mobile-max: ($screen-mobile - 1) ;
+$screen-tablet: 768px;
+$screen-tablet-max: ($screen-tablet - 1 );
+$screen-laptop: 1024px;
+$screen-laptop-max: ($screen-laptop - 1 );
+$screen-tv: 2560px;
+$screen-tv-max: ($screen-tv - 1 );
+
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+$screen-xl-min: ($screen-lg-min - 1);
+
+$screen-laptop-min : 1024px;
+$screen-laptop-max : 1044px;
+
+
+/**
+ * Auto resize for small devices
+ * @mixin
+ * @section Media queries
+ */
+
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+/**
+ * Auto resize for medium devices
+ * @mixin
+ * @section Media queries
+ */
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+/**
+ * Auto resize for large devices
+ * @mixin
+ * @section Media queries
+ */
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+/**
+ * Auto resize for x-large devices
+ * @mixin
+ * @section Media queries
+ */
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// inférieur à tablette
+@mixin mobile {
+  @media (max-width: #{$screen-mobile-max} ) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$screen-mobile } ) and (max-width: #{$screen-tablet-max })  {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$screen-tablet } ) {
+    @content;
+  }
+}
+
+@mixin small-laptop {
+  @media (min-width: #{$screen-tablet }) and (max-width: 1025px) {
+    @content;
+  }
+}
+
+
+@mixin tv {
+  @media (min-width: #{$screen-laptop-min}) {
+    @content;
+  }
+}
+
+
+
+/**
+ * Transition function
+ * @mixin
+ * @section Functions
+ * @param $time
+ *  Ex : 0,3s
+ * @example
+ *  @include transition_all();
+ *  @include transition_all(0.3s);
+ */
+@mixin transition_all($transition : 0.3s) {
+  -webkit-transition: all $transition ease-in-out;
+  -moz-transition: all $transition ease-in-out;
+  -ms-transition: all $transition ease-in-out;
+  -o-transition: all $transition ease-in-out;
+  transition: all $transition ease-in-out;
+}
+
+// Small devices
+@mixin sm_1 {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md_1 {
+  @media (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg_1 {
+  @media (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl_1 {
+  @media (max-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
